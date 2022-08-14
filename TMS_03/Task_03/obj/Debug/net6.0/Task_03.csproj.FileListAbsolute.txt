@@ -1,0 +1,15 @@
+C:\Users\Я\source\repos\TMS_03\Task_03\bin\Debug\net6.0\Task_03.exe
+C:\Users\Я\source\repos\TMS_03\Task_03\bin\Debug\net6.0\Task_03.deps.json
+C:\Users\Я\source\repos\TMS_03\Task_03\bin\Debug\net6.0\Task_03.runtimeconfig.json
+C:\Users\Я\source\repos\TMS_03\Task_03\bin\Debug\net6.0\Task_03.dll
+C:\Users\Я\source\repos\TMS_03\Task_03\bin\Debug\net6.0\Task_03.pdb
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\Task_03.csproj.AssemblyReference.cache
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\Task_03.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\Task_03.AssemblyInfoInputs.cache
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\Task_03.AssemblyInfo.cs
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\Task_03.csproj.CoreCompileInputs.cache
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\Task_03.dll
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\refint\Task_03.dll
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\Task_03.pdb
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\Task_03.genruntimeconfig.cache
+C:\Users\Я\source\repos\TMS_03\Task_03\obj\Debug\net6.0\ref\Task_03.dll
