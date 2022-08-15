@@ -14,15 +14,22 @@
             return n;
         }
 
+        enum TypeOfArray
+        {
+            oneRank = 1,
+            twoRank = 2
+        }
+
         static void Main(string[] args)
         {
+
             Console.WriteLine("Программа по нахождению некоторых значений массива\nВыберите какой Ранг массива:\n" +
                 "1 - Одномерный\n" +
                 "2 - Двумерный");
 
             int rank = Input();
 
-            while (!rank.In(1, 2))
+            while (!rank.In((int)TypeOfArray.oneRank, (int)TypeOfArray.twoRank))
             {
                 Console.WriteLine("Неверное число - попробуйте 1 или 2");
                 rank = Input();
@@ -30,13 +37,13 @@
 
             switch (rank)
             {
-                case 1:
+                case (int)TypeOfArray.oneRank:
                     RandomOneRankArray oneRank = new();
                     oneRank.ShowInfo();
                     oneRank.BubbleSort();
                     oneRank.MergeSort();
                     break;
-                case 2:
+                case (int)TypeOfArray.twoRank:
                     RandomTwoRankArray twoRank = new();
                     twoRank.ShowInfo();
                     twoRank.BubbleSort();
