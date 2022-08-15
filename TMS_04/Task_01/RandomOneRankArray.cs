@@ -17,15 +17,8 @@ namespace Task_01
             return result;
         }
 
-        public RandomOneRankArray()
+        public RandomOneRankArray(int length)
         {
-            Console.Write("Введите длину одномерного массива: ");
-            int length = Program.Input();
-            while (length < 1)
-            {
-                Console.Write("Длина не может быть меньше 1 элемента: ");
-                length = Program.Input();
-            }
             a = new int[length];
             a.FillRandNum(); // заполняем массив
         }

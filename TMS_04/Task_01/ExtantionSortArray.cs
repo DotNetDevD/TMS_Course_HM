@@ -60,7 +60,6 @@ namespace Task_01
             DoMergeSort(a);
         }
 
-
         private static void Merge(int[] dist, int[] left, int[] right)
         {
             int leftIndex = 0;
@@ -96,6 +95,5 @@ namespace Task_01
                 distIndex++;
             }
         }
-
     }
 }

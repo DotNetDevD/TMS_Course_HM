@@ -14,16 +14,46 @@
             return n;
         }
 
+        static int InputArrayLength()
+        {
+            int length = Input();
+            while (length < 1)
+            {
+                Console.Write("Длина не может быть меньше 1 элемента: ");
+                length = Input();
+            }
+            return length;
+        }
+
         enum TypeOfArray
         {
             oneRank = 1,
             twoRank = 2
         }
 
+        static RandomOneRankArray InitializationOneRankArray()
+        {
+            Console.Write("Введите длину двумерного массива: ");
+            int length = InputArrayLength();
+            RandomOneRankArray oneRank = new(length);
+            return oneRank;
+        }
+
+        static RandomTwoRankArray InitializationTwoRankArray()
+        {
+            Console.Write("Введите числу строк двумерного массива: ");
+            int row = InputArrayLength();
+            Console.Write("Введите числу столбцов двумерного массива: ");
+            int column = InputArrayLength();
+            RandomTwoRankArray twoRank = new(row, column);
+            return twoRank;
+        }
+
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Программа по нахождению некоторых значений массива\nВыберите какой Ранг массива:\n" +
+            Console.WriteLine("Программа по нахождению некоторых значений массива\n" +
+                "Выберите какой Ранг массива:\n" +
                 "1 - Одномерный\n" +
                 "2 - Двумерный");
 
@@ -38,13 +68,13 @@
             switch (rank)
             {
                 case (int)TypeOfArray.oneRank:
-                    RandomOneRankArray oneRank = new();
+                    RandomOneRankArray oneRank = InitializationOneRankArray();
                     oneRank.ShowInfo();
                     oneRank.BubbleSort();
                     oneRank.MergeSort();
                     break;
                 case (int)TypeOfArray.twoRank:
-                    RandomTwoRankArray twoRank = new();
+                    RandomTwoRankArray twoRank = InitializationTwoRankArray();
                     twoRank.ShowInfo();
                     twoRank.BubbleSort();
                     twoRank.MergeSort();
@@ -54,7 +84,6 @@
             Console.WriteLine("Для выхода нажмите любую кнопку");
             Console.ReadKey();
         }
-
     }
 }
 /*2. Создать консольное приложение:

@@ -25,23 +25,8 @@ namespace Task_01
             return result;
         }
 
-        public RandomTwoRankArray()
+        public RandomTwoRankArray(int row, int column)
         {
-            Console.Write("Введите числу строк двумерного массива: ");
-            int row = Program.Input();
-            while (row < 1)
-            {
-                Console.Write("Длина строк не может быть меньше 1 элемента: ");
-                row = Program.Input();
-            }
-            Console.Write("Введите числу столбцов двумерного массива: ");
-            int column = Program.Input();
-            while (column < 1)
-            {
-                Console.Write("Длина столбцов не может быть меньше 1 элемента: ");
-                column = Program.Input();
-            }
-
             a = new int[row, column];
             a.FillRandNum(); // заполняем массив
         }
