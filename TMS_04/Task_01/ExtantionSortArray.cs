@@ -8,6 +8,13 @@ namespace Task_01
 {
     static class ExtantionSortArray
     {
+        static void Swop(ref int a, ref int b)
+        {
+            int temp = a;
+            a = b;
+            b = temp;
+        }
+
         // Немного улучшенная сортировка пузырьком
         public static void BubbleSort(this int[] a)
         {
@@ -17,7 +24,7 @@ namespace Task_01
                 {
                     if (a[j] > a[j - 1])
                     {
-                        Program.Swop(ref a[j], ref a[j - 1]);
+                        Swop(ref a[j], ref a[j - 1]);
                     }
                 }
             }

@@ -2,24 +2,14 @@
 {
     internal class Program
     {
-        public static void Swop(ref int a, ref int b)
-        {
-            int temp = a;
-            a = b;
-            b = temp;
-        }
-
         public static int Input()
         {
+            int n = 0; // инициализация правильная?
             string temp = Console.ReadLine();
-
-            if (!int.TryParse(temp, out int n))
+            while (!int.TryParse(temp, out n))
             {
-                while (!int.TryParse(temp, out n))
-                {
-                    Console.WriteLine("Неверный ввод, введите число");
-                    temp = Console.ReadLine();
-                }
+                Console.WriteLine("Неверный ввод, введите число");
+                temp = Console.ReadLine();
             }
             return n;
         }
