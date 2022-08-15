@@ -10,6 +10,21 @@ namespace Task_01
     {
         int[,] a;
 
+        // Переопределение метода ToString, для вывода массива
+        public override string ToString()
+        {
+            string result = String.Empty;
+            for (int i = 0; i < a.GetLength(0); i++)
+            {
+                for (int j = 0; j < a.GetLength(1); j++)
+                {
+                    result += string.Format("{0,4}", a[i, j]);
+                }
+                result += "\n";
+            }
+            return result;
+        }
+
         public RandomTwoRankArray()
         {
             Console.Write("Введите числу строк двумерного массива: ");
@@ -31,9 +46,14 @@ namespace Task_01
             a.FillRandNum(); // заполняем массив
         }
 
+        public RandomTwoRankArray(int[,] a)
+        {
+            this.a = a;
+        }
+
         public void ShowInfo()
         {
-            a.Print(); // выводим
+            Console.WriteLine(this); // выводим
             a.FindMaxElement(); // находим максимальный элемент
             a.FindMinElement(); // находим минимальный элемент
             a.FindSum(); // находим сумму элементов
@@ -42,6 +62,7 @@ namespace Task_01
 
         public void BubbleSort()
         {
+            
             Console.WriteLine("Сортировка пузырьком: ");
             int length = a.Length;
             int[] oneLineArray = new int[length];
@@ -61,7 +82,8 @@ namespace Task_01
                 for (int j = 0; j < a.GetLength(1); j++)
                     sortedArray[i, j] = oneLineArray[(i * a.GetLength(1)) + j];
 
-            sortedArray.Print();
+            RandomTwoRankArray bubbleSortArray = new(sortedArray);
+            Console.WriteLine(bubbleSortArray);
         }
 
         public void MergeSort()
@@ -85,8 +107,8 @@ namespace Task_01
                 for (int j = 0; j < a.GetLength(1); j++)
                     sortedArray[i, j] = oneLineArray[(i * a.GetLength(1)) + j];
 
-            sortedArray.Print();
+            RandomTwoRankArray mergeSortArray = new(sortedArray);
+            Console.WriteLine(mergeSortArray);
         }
-
     }
 }

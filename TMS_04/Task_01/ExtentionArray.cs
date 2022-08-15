@@ -14,27 +14,6 @@ namespace Task_01
             return options.Contains(value);
         }
 
-        // Метод расширения для одномерногого массива - Вывод на консоль
-        static public void Print(this int[] array)
-        {
-            string result = string.Join(", ", array);
-            Console.WriteLine(result);
-        }
-
-        // Перегрузка метода расширения для двумерного массива - Вывод на консоль
-        static public void Print(this int[,] array)
-        {
-            for (int i = 0; i < array.GetLength(0); i++)
-            {
-                for (int j = 0; j < array.GetLength(1); j++)
-                {
-                    string result = string.Format("{0,4}", array[i, j]);
-                    Console.Write(result);
-                }
-                Console.WriteLine();
-            }
-        }
-
         // Метод расширения для одномерногого массива - Заполнение рандомными числами
         static public void FillRandNum(this int[] array)
         {

@@ -10,6 +10,13 @@ namespace Task_01
     {
         int[] a;
 
+        // Переопределение метода ToString, для вывода массива
+        public override string ToString()
+        {
+            string result = string.Join(", ", a);
+            return result;
+        }
+
         public RandomOneRankArray()
         {
             Console.Write("Введите длину одномерного массива: ");
@@ -25,7 +32,7 @@ namespace Task_01
 
         public void ShowInfo()
         {
-            a.Print(); // выводим
+            Console.WriteLine(this); // выводим
             a.FindMaxElement(); // находим максимальный элемент
             a.FindMinElement(); // находим минимальный элемент
             a.FindSum(); // находим сумму элементов
@@ -36,14 +43,14 @@ namespace Task_01
         {
             Console.WriteLine("Сортировка пузырьком: ");
             a.BubbleSort();
-            a.Print();
+            Console.WriteLine(this);
         }
 
         public void MergeSort()
         {
             Console.WriteLine("Сортировка слиянием: ");
             a.MergeSort();
-            a.Print();
+            Console.WriteLine(this);
         }
 
     }
