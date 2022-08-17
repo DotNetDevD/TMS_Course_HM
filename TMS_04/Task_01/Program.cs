@@ -85,19 +85,6 @@
             Console.ReadKey();
         }
     }
-    public static int Input()
-    {
-        string temp = Console.ReadLine();
-        if (!int.TryParse(temp, out int n))
-        {
-            while (!int.TryParse(temp, out n))
-            {
-                Console.WriteLine("Неверный ввод, введите число");
-                temp = Console.ReadLine();
-            }
-        }
-    }
-
 }
 /*2. Создать консольное приложение:
     - Приложение должно создавать массив целых чисел, размер которого должен задавать пользователь с клавиатуры.
