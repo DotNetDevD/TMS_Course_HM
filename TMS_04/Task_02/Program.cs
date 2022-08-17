@@ -20,7 +20,6 @@
                 else
                     translator.Translate(word);
             }
-
         }
     }
 }
