@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Task_01
 {
     internal enum Currencies
-    { 
+    {
         USD, // US dollar
         EUR, // Euro
         RUB, // Russian ruble
@@ -19,4 +19,5 @@ namespace Task_01
         CHF, // Swiss franc 
         CNH // Chinese renminbi
     }
+
 }

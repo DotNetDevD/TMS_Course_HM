@@ -2,6 +2,42 @@
 {
     internal class Program
     {
+        static int Input()
+        {
+            string temp = Console.ReadLine();
+            int n = 0;
+            while (!int.TryParse(temp, out n))
+            {
+                Console.Write("Неверный ввод!\nВведите число раз: ");
+                temp = Console.ReadLine();
+            }
+            return n;
+        }
+
+        // списиок наших валют
+        static void TypeOfCurrencies()
+        {
+            string[] typeOfCurrencies = Enum.GetNames(typeof(Currencies));
+            foreach (string name in typeOfCurrencies)
+            {
+                Console.Write(name + " ");
+            }
+            Console.WriteLine();
+        }
+
+        static Currencies GetTypeOfCurrencies()
+        {
+            Console.Write("Введите наименование валюты: ");
+            string? temp = Console.ReadLine();
+            object findCur;
+            while (!Enum.TryParse(typeof(Currencies), temp.ToUpper(), out findCur))
+            {
+                Console.Write("Такой валюты нет!\nВведите еще раз: ");
+                temp = Console.ReadLine();
+            }
+
+            return (Currencies)findCur;
+        }
 
         static ExchangeRate[] CreateExchangeRateArray(Currencies userCurrencies)
         {
@@ -42,20 +78,26 @@
         {
             Console.WriteLine("Валютный калькулятор");
             CurrencyConverter currencyConverter = new();
-            Console.WriteLine("Введите валюту которую хотите обьменять: ");
+            Console.WriteLine("Введите валюту которую хотите обьменять из списка:");
+            // вывод всех типов валют
+            TypeOfCurrencies(); 
+            Currencies curForExchange = GetTypeOfCurrencies();
+            
+            // заполнение рандомными числами по заданной валюте
+            currencyConverter.AddExchangeRates(CreateExchangeRateArray(curForExchange));
+            
+            
+            Console.WriteLine("Курс на данный момент: ");
+            Console.Write(currencyConverter);
 
-            currencyConverter.AddExchangeRates(CreateExchangeRateArray(Currencies.RUB));
-            Console.Write("");
-            Console.ReadLine();
-            Console.Write("Введите валюту на которую хотите обьменять: ");
-            Console.WriteLine("USD");
-            Console.Write("Курс на данный момент: ");
-            ExchangeRate findExchangeRate = cc.FindExchangeRate(Currencies.EUR, Currencies.USD);
+            Console.WriteLine($"Выберите валюту на которую будем менять ваш {curForExchange}");
+            Currencies curToExchange = GetTypeOfCurrencies();
+            ExchangeRate findExchangeRate = currencyConverter.FindExchangeRate(curForExchange, curToExchange);
             Console.WriteLine(findExchangeRate);
             Console.Write("Сумма на обмен: ");
-            Console.WriteLine(10);
+            int count = Input();
             Console.Write("Ваш обмен: ");
-            ExchangeRate myExchange = cc.Convert(Currencies.EUR, Currencies.USD, 10);
+            ExchangeRate myExchange = currencyConverter.Convert(curForExchange, curToExchange, count);
             Console.Write(myExchange);
             Console.WriteLine();
         }
