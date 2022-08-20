@@ -78,7 +78,7 @@
         {
             Console.WriteLine("Валютный калькулятор");
             CurrencyConverter currencyConverter = new();
-            Console.WriteLine("Введите валюту которую хотите обьменять из списка:");
+            Console.WriteLine("Введите валюту которую хотите обменять из списка:");
             // вывод всех типов валют
             TypeOfCurrencies(); 
             Currencies curForExchange = GetTypeOfCurrencies();
