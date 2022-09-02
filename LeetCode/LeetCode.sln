@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearch", "LeetCode\BinarySearch.csproj", "{FCEC5EF9-50A9-4D40-A43C-BE671ED37EFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0977_Squares_of_a_Sorted_Array", "0977_Squares_of_a_Sorted_Array\0977_Squares_of_a_Sorted_Array.csproj", "{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "0977_Squares_of_a_Sorted_Array", "0977_Squares_of_a_Sorted_Array\0977_Squares_of_a_Sorted_Array.csproj", "{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0189_Rotate_Array", "0189_Rotate_Array\0189_Rotate_Array.csproj", "{8CB7EDD3-F017-4DF5-9920-1B4E60642207}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CB7EDD3-F017-4DF5-9920-1B4E60642207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CB7EDD3-F017-4DF5-9920-1B4E60642207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CB7EDD3-F017-4DF5-9920-1B4E60642207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CB7EDD3-F017-4DF5-9920-1B4E60642207}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
