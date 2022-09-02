@@ -8,15 +8,40 @@ namespace Task_01
 {
     internal class HtmlParser : FileParser
     {
+        FileInfo fileInfo;
+        string path;
         public HtmlParser(string fileName) : base(fileName)
         {
+            path = $@"D:\{fileName}";
         }
 
-        public override string ParserFormat { get => $"{nameof(HtmlParser)}: Файл {FileName}"; }
+        public override string ParserFormat => ".html";
 
-        public override void Open() => Console.WriteLine($"{ParserFormat}, был открыт");
-        public override void Read() => Console.WriteLine($"{ParserFormat}, был считан");
-        public override void Analize() => Console.WriteLine($"{ParserFormat}, был проанализирован");
-        public override void Close() => Console.WriteLine($"{ParserFormat}, был закрыт");
+        public override void Open()
+        {
+            fileInfo = new FileInfo(path);
+        }
+        public override void Read()
+        {
+            string[] readText = File.ReadAllLines(path);
+            foreach (string s in readText)
+            {
+                Console.WriteLine(s);
+            }
+        }
+        public override void Analize()
+        {
+            if (fileInfo.Exists)
+            {
+                Console.WriteLine($"{nameof(HtmlParser)}: Файл {FileName}, был проанализирован");
+                Console.WriteLine($"Имя файла: {fileInfo.Name}");
+                Console.WriteLine($"Время создания: {fileInfo.CreationTime}");
+                Console.WriteLine($"Размер: {fileInfo.Length}");
+            }
+        }
+        public override void Close()
+        {
+            Console.WriteLine($"{nameof(HtmlParser)}: Файл {FileName}, был закрыт");
+        }
     }
 }

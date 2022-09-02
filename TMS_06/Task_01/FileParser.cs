@@ -11,8 +11,7 @@ namespace Task_01
         public string FileName { get; }
 
         public FileParser(string fileName) => FileName = fileName;
-
-
+        
         public abstract string ParserFormat { get; }
 
         public abstract void Open();
@@ -20,7 +19,7 @@ namespace Task_01
         public abstract void Analize();
         public abstract void Close();
 
-        public virtual void Parse()
+        public void Parse()
         {
             Open(); Read(); Analize(); Close();
         }

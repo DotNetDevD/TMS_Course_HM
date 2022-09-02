@@ -1,0 +1,15 @@
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\bin\Debug\net6.0\0977_Squares_of_a_Sorted_Array.exe
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\bin\Debug\net6.0\0977_Squares_of_a_Sorted_Array.deps.json
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\bin\Debug\net6.0\0977_Squares_of_a_Sorted_Array.runtimeconfig.json
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\bin\Debug\net6.0\0977_Squares_of_a_Sorted_Array.dll
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\bin\Debug\net6.0\0977_Squares_of_a_Sorted_Array.pdb
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\0977_Squares_of_a_Sorted_Array.csproj.AssemblyReference.cache
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\0977_Squares_of_a_Sorted_Array.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\0977_Squares_of_a_Sorted_Array.AssemblyInfoInputs.cache
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\0977_Squares_of_a_Sorted_Array.AssemblyInfo.cs
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\0977_Squares_of_a_Sorted_Array.csproj.CoreCompileInputs.cache
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\0977_Squares_of_a_Sorted_Array.dll
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\refint\0977_Squares_of_a_Sorted_Array.dll
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\0977_Squares_of_a_Sorted_Array.pdb
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\0977_Squares_of_a_Sorted_Array.genruntimeconfig.cache
+C:\Users\Я\source\repos\TMS_Course_HM\LeetCode\0977_Squares_of_a_Sorted_Array\obj\Debug\net6.0\ref\0977_Squares_of_a_Sorted_Array.dll

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BinarySearch", "LeetCode\BinarySearch.csproj", "{FCEC5EF9-50A9-4D40-A43C-BE671ED37EFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "0977_Squares_of_a_Sorted_Array", "0977_Squares_of_a_Sorted_Array\0977_Squares_of_a_Sorted_Array.csproj", "{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCEC5EF9-50A9-4D40-A43C-BE671ED37EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEC5EF9-50A9-4D40-A43C-BE671ED37EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCEC5EF9-50A9-4D40-A43C-BE671ED37EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEC5EF9-50A9-4D40-A43C-BE671ED37EFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE1F632-BB4F-40C2-856B-84B4C742B6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFCB5011-C3D7-4E42-9C90-99E798523791}
+	EndGlobalSection
+EndGlobal
