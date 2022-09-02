@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Я\\Source\\Repos\\TMS_Course_HM\\TMS_06\\Task_01\\Task_01.csproj": {}
+    "C:\\Users\\Я\\source\\repos\\TMS_Course_HM\\TMS_06\\Task_01\\Task_01.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Я\\Source\\Repos\\TMS_Course_HM\\TMS_06\\Task_01\\Task_01.csproj": {
+    "C:\\Users\\Я\\source\\repos\\TMS_Course_HM\\TMS_06\\Task_01\\Task_01.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Я\\Source\\Repos\\TMS_Course_HM\\TMS_06\\Task_01\\Task_01.csproj",
+        "projectUniqueName": "C:\\Users\\Я\\source\\repos\\TMS_Course_HM\\TMS_06\\Task_01\\Task_01.csproj",
         "projectName": "Task_01",
-        "projectPath": "C:\\Users\\Я\\Source\\Repos\\TMS_Course_HM\\TMS_06\\Task_01\\Task_01.csproj",
+        "projectPath": "C:\\Users\\Я\\source\\repos\\TMS_Course_HM\\TMS_06\\Task_01\\Task_01.csproj",
         "packagesPath": "C:\\Users\\Я\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Я\\source\\repos\\TMS_Course_HM\\TMS_06\\Task_01\\obj\\",
+        "outputPath": "C:\\Users\\Я\\Source\\Repos\\TMS_Course_HM\\TMS_06\\Task_01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Я\\AppData\\Roaming\\NuGet\\NuGet.Config",
