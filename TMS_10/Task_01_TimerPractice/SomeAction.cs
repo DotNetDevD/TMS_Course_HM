@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Task_01_TimerPractice
 {
-   public struct SomeAction
+    public struct SomeAction
     {
-        public int startTime;
-        public int periodOfTime;
+        public int StartTime { get; private set; }
+        public int PeriodOfTime { get; private set; }
         public Stopwatch stopwatch;
         public SomeAction(int startTime, int periodOfTime, Stopwatch stopwatch)
         {
-            this.startTime = startTime;
-            this.periodOfTime = periodOfTime;
+            StartTime = startTime;
+            PeriodOfTime = periodOfTime;
             this.stopwatch = stopwatch;
         }
     }
