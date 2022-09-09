@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TMS_04",
+    "\\TMS_04\\Task_02"
   ],
-  "SelectedNode": "\\LeetCode.sln",
+  "SelectedNode": "\\TMS_04\\Task_02\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
