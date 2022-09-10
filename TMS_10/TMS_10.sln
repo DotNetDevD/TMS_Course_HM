@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_01_TimerPractice", "Task_01_TimerPractice\Task_01_TimerPractice.csproj", "{F9759ADE-F7F6-466D-9160-4543464EB610}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_01_TimerPractice", "Task_01_TimerPractice\Task_01_TimerPractice.csproj", "{F9759ADE-F7F6-466D-9160-4543464EB610}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task_02_DelegatePractice", "Task_02_DelegatePractice\Task_02_DelegatePractice.csproj", "{257E1ABC-575F-426D-8D23-6F16FB9BE6DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_02_DelegatePractice", "Task_02_DelegatePractice\Task_02_DelegatePractice.csproj", "{257E1ABC-575F-426D-8D23-6F16FB9BE6DB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_04_Obsolete", "Task_04_Obsolete\Task_04_Obsolete.csproj", "{02DEEB51-FB18-4C32-91B4-96AE401BBE45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_03_AttributePractice", "Task_03_AttributePractice\Task_03_AttributePractice.csproj", "{9A2D947C-42C8-4380-92EF-10E27F75A8FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{257E1ABC-575F-426D-8D23-6F16FB9BE6DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{257E1ABC-575F-426D-8D23-6F16FB9BE6DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{257E1ABC-575F-426D-8D23-6F16FB9BE6DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02DEEB51-FB18-4C32-91B4-96AE401BBE45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02DEEB51-FB18-4C32-91B4-96AE401BBE45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02DEEB51-FB18-4C32-91B4-96AE401BBE45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02DEEB51-FB18-4C32-91B4-96AE401BBE45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A2D947C-42C8-4380-92EF-10E27F75A8FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A2D947C-42C8-4380-92EF-10E27F75A8FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A2D947C-42C8-4380-92EF-10E27F75A8FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A2D947C-42C8-4380-92EF-10E27F75A8FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
