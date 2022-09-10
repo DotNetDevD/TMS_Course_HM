@@ -19,7 +19,7 @@ static void GetAccess(Employee emp, AccesLevelType accessLevel)
         if ((int)partArr.type >= (int)accessLevel)
             isAccess = true;
     }
-    string text = isAccess ? "Your level is approved" : "Your level is prohibit";
+    string text = isAccess ? "Your access level is approved" : "Your access level is prohibited";
     Console.WriteLine(text);
 }
 
