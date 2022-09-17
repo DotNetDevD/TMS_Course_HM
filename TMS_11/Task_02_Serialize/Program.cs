@@ -2,6 +2,7 @@
 using System.Xml.Serialization;
 using System.Text.Json;
 
+
 Point squarePoint = new(10, 10);
 Shape square = new(squarePoint, 100, 100, "Square");
 Shape rectangle = new(new Point(20, 20), 100, 200, "Rectangle");
@@ -28,6 +29,17 @@ Console.WriteLine("Введите название файла для Json дес
 Shape[]? newJsonShapes = isJsonDeserialize(pathJsonSerializeName, shapes);
 ShowShapes(newJsonShapes);
 
+Console.WriteLine(new string('-', 45));
+
+Console.WriteLine("Введие название файла для Newtonsoft.Json сериализации:");
+NewtonsoftJson newtonsoft = new();
+string pathNewtonsoftSerializeName = CorrectFileName();
+newtonsoft.Serialize(shapes, pathNewtonsoftSerializeName);
+
+Console.WriteLine("Введие название файла для Newtonsoft.Json десериализации:");
+string pathNewtonsoftDeserializeName = CorrectFileName();
+Shape[] newtonsoftJsonShapes = newtonsoft.Deseralize(shapes, pathNewtonsoftDeserializeName);
+ShowShapes(newtonsoftJsonShapes);
 
 static void ShowShapes(Shape[] shapes)
 {
