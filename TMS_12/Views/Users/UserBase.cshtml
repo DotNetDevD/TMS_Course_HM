@@ -1,0 +1,8 @@
+﻿@model IEnumerable<UserInfo>
+
+@{
+    foreach (var user in Model)
+    {
+        <h4>@user.ToString()</h4><br/>
+    }
+}
