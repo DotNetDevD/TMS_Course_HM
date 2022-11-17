@@ -22,7 +22,7 @@ namespace TMS_13.Controllers
                 string? name = Request.Query["name"];
                 int? age = Convert.ToInt32(Request.Query["age"]);
                 DateOnly? dateOnly = DateOnly.Parse(Request.Query["dateOnly"]);
-                string? adress = Request.Query["name"];
+                string? adress = Request.Query["adress"];
                 worker = new(name, age, dateOnly, adress);
             }
             catch

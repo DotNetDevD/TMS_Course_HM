@@ -1,0 +1,5 @@
+https://localhost:7124/
+https://localhost:7124/home/index/?name=test&age=22&dateOnly=06.01.2000&adress=SomeAdress
+https://localhost:7124/
+https://localhost:7124/
+https://localhost:7124/Home/CatchError

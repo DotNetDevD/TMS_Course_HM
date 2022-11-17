@@ -18,7 +18,7 @@ namespace TMS_13.Middleware
                         context.Request.PathBase.ToUriComponent(),
                         context.Request.Path.ToUriComponent(),
                         context.Request.QueryString.ToUriComponent());
-            string path = @"D:\url.txt";
+            string path = @"Url.txt";
             using(StreamWriter st = new StreamWriter(path, true))
             {
                 // alternative
